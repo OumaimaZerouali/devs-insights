@@ -1,0 +1,26 @@
+title: Dev's Insights
+email: oumaima.zerouali@gmail.com
+description: >
+  Dev's Insights is a blog where I share my thoughts, tutorials, and insights
+  on programming, best practices, and the latest trends in
+  technology. Join me as I explore new ideas and share some knowledge.
+baseurl: "/blog"
+url: ""
+
+theme: minima
+plugins:
+  - jekyll-feed
+
+paginate: 10
+
+exclude:
+   - .sass-cache/
+   - .jekyll-cache/
+   - gemfiles/
+   - Gemfile
+   - Gemfile.lock
+   - node_modules/
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/
