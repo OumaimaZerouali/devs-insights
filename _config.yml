@@ -4,8 +4,8 @@ description: >
   Dev's Insights is a blog where I share my thoughts, tutorials, and insights
   on programming, best practices, and the latest trends in
   technology. Join me as I explore new ideas and share some knowledge.
-baseurl: "/blog"
-url: ""
+baseurl: "/devs-insights"
+url: "https://oumaimazerouali.github.io"
 
 theme: minima
 plugins:
