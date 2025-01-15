@@ -10,6 +10,7 @@ url: "https://oumaimazerouali.github.io"
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 paginate: 10
 
