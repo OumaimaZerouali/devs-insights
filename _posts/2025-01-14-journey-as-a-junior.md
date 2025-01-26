@@ -2,8 +2,7 @@
 layout: post
 title:  "The Journey of a Junior Developer: Bridging the Gap Between Theory and Practice"
 date:   2025-01-14 20:54:30 +0100
-categories: developer
-comments: true
+image:  "assets/img/spongebob-image.jpeg"
 ---
 >"I'm ready! I'm ready! I'm ready!" – SpongeBob SquarePants
 
