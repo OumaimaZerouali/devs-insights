@@ -1,30 +1,35 @@
 <header class="site-header" role="banner">
-
   <div class="wrapper">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+    {{ site.title | escape }}
+    </a>
 
-    {%- if page_paths -%}
-    <div class="menu-container">
-      <form class="search-form" id="search-form">
-        <button type="button" class="search-icon" onclick="toggleSearch()"><i class="fas fa-search"></i></button>
-        <input type="text" name="q" class="search-input" placeholder="Search..." value="{{ page.query }}" id="search-input">
-      </form>
-
-      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-      <nav class="nav-menu">
-        <ul>
-          <li class="projects">
-            <a href="#">Projects</a>
-            <ul class="additional-projects">
-              <li><a href="https://oumaimazerouali.github.io/whatholidayisittoday/">What holiday is it?</a></li>
-              <li><a href="https://oumaimazerouali.github.io/hacker-themed-portfolio/">Hacker themed portfolio</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+    <div class="social-icons">
+      {% if site.linkedin_username %}
+      <a
+              href="https://www.linkedin.com/in/{{ site.linkedin_username }}"
+              target="_blank"
+              aria-label="My LinkedIn Profile"
+      >
+        <i class="fab fa-linkedin"></i>
+      </a>
+      {% endif %} {% if site.github_username %}
+      <a
+              href="https://github.com/{{ site.github_username }}"
+              target="_blank"
+              aria-label="My GitHub Profile"
+      >
+        <i class="fab fa-github"></i>
+      </a>
+      {% endif %} {% if site.instagram_username %}
+      <a
+              href="https://www.instagram.com/{{ site.instagram_username }}"
+              target="_blank"
+              aria-label="My Instagram Profile"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+      {% endif %}
     </div>
-    {%- endif -%}
   </div>
 </header>

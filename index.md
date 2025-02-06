@@ -2,26 +2,62 @@
 layout: default
 ---
 
-{% for post in site.posts %}
-  <article class="post">
-    {% if post.image %}
-      <div class="post-image">
-        <img src="{{ post.image }}" alt="">
-        <div class="post-overlay">
-          <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+<hr />
+<div class="dev-insight">
+  <h3>I'm ready! I'm ready! I'm ready! ...to deploy to production!</h3>
+  <p>
+    Welcome to my blog! Here, I share my insights on IT, programming, and the
+    joys and challenges of working in development teams. Expect to find
+    articles on coding techniques, project management, and the occasional
+    anecdote from the trenches of software development.
+  </p>
+</div>
+<hr />
+
+<div class="main-content">
+  <div class="featured-post">
+    {% assign featured_post = site.posts.first %}
+    {% if featured_post %}
+    <a href="{{ featured_post.url | relative_url }}">
+      {% if featured_post.image %}
+      <img
+        src="{{ featured_post.image }}"
+        alt="{{ featured_post.title }}"
+      />
+      <p class="post-meta">
+        {{ featured_post.date | date: "%B %d, %Y" }}
+      </p>
+      {% endif %}
+      <h2>{{ featured_post.title }}</h2>
+      <p>{{ featured_post.excerpt }}</p>
+    </a>
+    {% endif %}
+  </div>
+
+  <div class="sidebar-posts">
+    {% assign sidebar_posts = site.posts | slice: 1, 3 %}
+    {% for post in sidebar_posts %}
+    <div class="sidebar-post">
+      <a href="{{ post.url | relative_url }}">
+        {% if post.image %}
+        <img
+          src="{{ post.image }}"
+          alt="{{ post.title }}"
+          class="sidebar-image"
+        />
+        {% endif %}
+        <div class="sidebar-post-info">
+          <h3>{{ post.title }}</h3>
           <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
         </div>
-      </div>
-    {% endif %}
-  </article>
-{% endfor %}
-
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}">Previous</a>
-  {% endif %}
-
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}">Next</a>
-  {% endif %}
+      </a>
+    </div>
+    {% endfor %}
+  </div>
 </div>
+
+{% if site.posts.size > 4 %}
+<div class="more-posts">
+  <a href="/overview" class="button">More Posts</a>
+</div>
+{% endif %}

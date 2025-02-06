@@ -3,6 +3,7 @@ gem "jekyll", "~> 4.3.4"
 gem "minima", "~> 2.5"
 gem "jekyll-sitemap", "~> 1.4.0"
 gem 'jekyll-toc'
+gem "jekyll-paginate", "~> 1.1.0"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
