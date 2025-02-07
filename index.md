@@ -25,12 +25,12 @@ layout: default
         alt="{{ featured_post.title }}"
       />
       {% endif %}
-      <h2>{{ featured_post.title }}</h2>
       <p class="post-meta">
         {{ featured_post.date | date: "%B %d, %Y" }} - {{
         featured_post.content | number_of_words }} words - {{
         featured_post.content | number_of_words | divided_by: 200 }} min read
       </p>
+      <h2>{{ featured_post.title }}</h2>
       <p>{{ featured_post.excerpt }}</p>
     </a>
     {% endif %}
