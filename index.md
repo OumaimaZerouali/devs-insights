@@ -24,11 +24,13 @@ layout: default
         src="{{ featured_post.image }}"
         alt="{{ featured_post.title }}"
       />
-      <p class="post-meta">
-        {{ featured_post.date | date: "%B %d, %Y" }}
-      </p>
       {% endif %}
       <h2>{{ featured_post.title }}</h2>
+      <p class="post-meta">
+        {{ featured_post.date | date: "%B %d, %Y" }} - {{
+        featured_post.content | number_of_words }} words - {{
+        featured_post.content | number_of_words | divided_by: 200 }} min read
+      </p>
       <p>{{ featured_post.excerpt }}</p>
     </a>
     {% endif %}
@@ -48,7 +50,11 @@ layout: default
         {% endif %}
         <div class="sidebar-post-info">
           <h3>{{ post.title }}</h3>
-          <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+          <p class="post-meta">
+            {{ post.date | date: "%B %d, %Y" }} - {{
+            post.content | number_of_words }} words - {{
+            post.content | number_of_words | divided_by: 200 }} min read
+          </p>
         </div>
       </a>
     </div>
