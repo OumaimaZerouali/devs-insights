@@ -37,7 +37,7 @@ layout: default
   </div>
 
   <div class="sidebar-posts">
-    {% assign sidebar_posts = site.posts | slice: 1, 3 %}
+    {% assign sidebar_posts = site.posts | slice: 1, 5 %}
     {% for post in sidebar_posts %}
     <div class="sidebar-post">
       <a href="{{ post.url | relative_url }}">
@@ -59,11 +59,12 @@ layout: default
       </a>
     </div>
     {% endfor %}
+    {% if site.posts.size > 6 %}
+        <div class="more-posts">
+          <a href="{{ site.baseurl }}/overview" class="button">More Posts</a>
+        </div>
+    {% endif %}
   </div>
 </div>
 
-{% if site.posts.size > 5 %}
-<div class="more-posts">
-  <a href="/overview" class="button">More Posts</a>
-</div>
-{% endif %}
+

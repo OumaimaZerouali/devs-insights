@@ -235,13 +235,37 @@ hr {
   margin: 0;
 }
 
+.more-posts {
+  display: flex;
+  justify-content: end;
+}
+
 .button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.29);
-  color: white;
+  color: black;
   text-decoration: none;
   border-radius: 5px;
+}
+
+#overview-content {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.overview-posts {
+  list-style: none;
+  padding: 0;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+}
+
+li a:visited {
+  color: black;
+  text-decoration: none;
 }
 
 /* FOOTER */
