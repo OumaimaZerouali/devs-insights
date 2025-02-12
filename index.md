@@ -62,7 +62,7 @@ layout: default
   </div>
 </div>
 
-{% if site.posts.size > 4 %}
+{% if site.posts.size > 5 %}
 <div class="more-posts">
   <a href="/overview" class="button">More Posts</a>
 </div>
