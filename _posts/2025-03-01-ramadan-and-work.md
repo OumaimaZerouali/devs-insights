@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Ramadan and Work: Finding Balance and Connection in a Team"
-date:   2025-03-01 06:00:00 +0100
-image:  "assets/img/ramadan-and-work.jpg"
+date:   2025-03-01 07:06:00 +0100
+image:  "assets/img/ramadan-and-work.png"
 ---
 > Together, we can do anything! - Spongebob SquarePants
 
