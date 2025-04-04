@@ -2,7 +2,7 @@
 layout: post
 title:  "My First KubeCon: A Java Dev’s Journey into the World of Kubernetes and Beyond"
 date:   2025-04-04 21:23:00 +0100
-image:  "assets/img/kubecon-2025.png"
+image:  "./assets/img/kubecon-2025.png"
 ---
 > "You don't need a license to drive a sandwich." - SpongeBob SquarePants
 

@@ -241,6 +241,10 @@ hr {
 .more-posts {
   display: flex;
   justify-content: end;
+
+  a:visited {
+    color: #151414;
+  }
 }
 
 .button {
@@ -256,7 +260,26 @@ hr {
   margin: 0 auto;
 }
 
+.overview-post a {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  justify-content: space-between; /* changed */
+}
+
+.overview-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.overview-post-info {
+  text-align: left;
+  flex: 1; /* The info will take up remaining space */
+}
+
 .overview-posts {
+  margin-top: 50px !important;
   list-style: none;
   padding: 0;
 }
