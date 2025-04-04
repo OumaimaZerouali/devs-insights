@@ -76,7 +76,7 @@ Whether it's accommodating different work styles, respecting personal commitment
 We should encourage everyone to share their thoughts, feelings, and needs, and we should create a safe and trusting environment where people feel comfortable speaking up.
 - **Valuing Diversity and Inclusion**: Ramadan reminds us of the importance of community and shared values. 
 We should strive to create a workplace where everyone feels valued, respected, and included, regardless of their background, beliefs, or experiences. 
-- This means actively promoting diversity, equity, and inclusion in all aspects of our work.
+This means actively promoting diversity, equity, and inclusion in all aspects of our work.
 
 By embracing these principles, we can create a workplace that is not only more productive but also more fulfilling and meaningful. 
 It's about building a team where everyone feels supported, respected, and empowered to bring their best selves to work.
