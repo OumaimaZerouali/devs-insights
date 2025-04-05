@@ -1,7 +1,7 @@
 title: Dev's Insights
 email: oumaima.zerouali@gmail.com
 description: >
-  A blog about tech, development, and personal growth.
+  A blog about tech and software development.
 baseurl: "/devs-insights"
 url: "https://oumaimazerouali.github.io"
 
@@ -22,7 +22,7 @@ instagram_username: zugzwang_o7
 
 seo:
   title: "Dev's Insight"
-  description: "A blog about tech, development, and personal growth."
+  description: "A blog about tech and software development."
   url: "https://oumaimazerouali.github.io/devs-insights/"
 
 exclude:
