@@ -21,7 +21,7 @@ layout: default
     <a href="{{ featured_post.url | relative_url }}">
       {% if featured_post.image %}
       <img
-        src="{{ featured_post.image }}"
+        src="{{ site.baseurl }}{{ featured_post.image }}"
         alt="{{ featured_post.title }}"
       />
       {% endif %}
@@ -43,7 +43,7 @@ layout: default
       <a href="{{ post.url | relative_url }}">
         {% if post.image %}
         <img
-          src="{{ post.image }}"
+          src="{{ site.baseurl }}{{ post.image }}"
           alt="{{ post.title }}"
           class="sidebar-image"
         />

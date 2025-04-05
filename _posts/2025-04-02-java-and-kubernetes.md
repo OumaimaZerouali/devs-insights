@@ -2,7 +2,7 @@
 layout: post
 title:  "Kubernetes + Java = ❤️: What I Learned About Cloud-Native Java at KubeCon"
 date:   2025-04-02 22:30:00 +0100
-image:  "./assets/img/java-and-quarkus.jpg"
+image:  "/assets/img/java-and-quarkus.jpg"
 ---
 > "The Krusty Krab pizza is the pizza for you and me!" - Spongebob SquarePants
 

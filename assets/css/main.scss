@@ -208,7 +208,8 @@ hr {
   gap: 10px;
 }
 
-.sidebar-image {
+.sidebar-image,
+.overview-image {
   width: 25%;
   height: auto;
   display: block;
@@ -264,24 +265,32 @@ hr {
   display: flex;
   text-decoration: none;
   color: inherit;
-  justify-content: space-between; /* changed */
-}
-
-.overview-image {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 .overview-post-info {
   text-align: left;
-  flex: 1; /* The info will take up remaining space */
+  flex: 1;
+
+  p {
+    font-size: 0.8em;
+  }
 }
 
 .overview-posts {
   margin-top: 50px !important;
   list-style: none;
   padding: 0;
+}
+
+.overview-post{
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 li a {
