@@ -1,9 +1,7 @@
 title: Dev's Insights
 email: oumaima.zerouali@gmail.com
 description: >
-  Dev's Insights is a blog where I share my thoughts, tutorials, and insights
-  on programming, best practices, and the latest trends in
-  technology. Join me as I explore new ideas and share some knowledge.
+  A blog about tech, development, and personal growth.
 baseurl: "/devs-insights"
 url: "https://oumaimazerouali.github.io"
 
@@ -13,6 +11,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-toc
   - jekyll-paginate
+  - jekyll-seo-tag
 
 paginate: 5
 paginate_path: "/page:num/"
@@ -20,6 +19,11 @@ paginate_path: "/page:num/"
 linkedin_username: oumaima-zerouali-16b189223
 github_username: OumaimaZerouali
 instagram_username: zugzwang_o7
+
+seo:
+  title: "Dev's Insight"
+  description: "A blog about tech, development, and personal growth."
+  url: "https://oumaimazerouali.github.io/devs-insights/"
 
 exclude:
    - .sass-cache/
