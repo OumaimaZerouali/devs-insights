@@ -330,3 +330,40 @@ li a:visited {
 .site-footer .footer-email a:hover {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 850px) {
+  .main-content {
+    flex-direction: column;
+    gap: 0;
+    margin: 50px;
+  }
+
+  .featured-post {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .sidebar-posts {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .sidebar-post,
+  .overview-post {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sidebar-image,
+  .overview-image {
+    width: 100%;
+    max-height: none;
+    margin-bottom: 10px;
+  }
+
+  .sidebar-post a,
+  .overview-post a {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
