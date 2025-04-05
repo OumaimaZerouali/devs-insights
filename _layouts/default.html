@@ -30,6 +30,54 @@
             progressBar.style.width = `${scrollPercent}%`;
         }
     });
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const codeBlocks = document.querySelectorAll('pre');
+
+        codeBlocks.forEach((block) => {
+            const language = block.classList[0];
+
+            if (language) {
+                const button = document.createElement('button');
+                button.className = 'copy-button';
+                button.innerText = 'Copy';
+
+                const copiedIcon = document.createElement('span');
+                copiedIcon.className = 'copied-icon';
+                copiedIcon.innerHTML = '&#x2714;';
+                copiedIcon.style.display = 'none';
+                button.appendChild(copiedIcon);
+
+                const pre = block.parentNode;
+                pre.style.position = 'relative';
+                pre.appendChild(button);
+
+                button.addEventListener('click', function() {
+                    const range = document.createRange();
+                    range.selectNode(block);
+                    window.getSelection().removeAllRanges();
+                    window.getSelection().addRange(range);
+
+                    try {
+                        document.execCommand('copy');
+                        copiedIcon.style.display = 'inline-block';
+                        button.innerText = '';
+                        button.appendChild(copiedIcon);
+
+                        setTimeout(() => {
+                            copiedIcon.style.display = 'none';
+                            button.innerText = 'Copy';
+                        }, 1500);
+                    } catch (err) {
+                        console.error('Failed to copy code: ', err);
+                    }
+
+                    window.getSelection().removeAllRanges();
+                });
+            }
+        });
+    });
 </script>
 </body>
 </html>
