@@ -4,12 +4,13 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon/favicon.ico' | relative_url }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
     <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js"></script>
 </head>
 {%- include head.html -%}
 
 <body>
+
+<div id="progress-bar"></div>
 
 {%- include header.html -%}
 
@@ -18,5 +19,17 @@
 </main>
 
 {%- include footer.html -%}
+
+<script>
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.body.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / docHeight) * 100;
+        const progressBar = document.getElementById('progress-bar');
+        if (progressBar) {
+            progressBar.style.width = `${scrollPercent}%`;
+        }
+    });
+</script>
 </body>
 </html>

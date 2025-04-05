@@ -368,3 +368,15 @@ li a:visited {
     align-items: flex-start;
   }
 }
+
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: #333;;
+  width: 0%;
+  z-index: 9999;
+  transition: width 0.25s ease-out;
+}
+
