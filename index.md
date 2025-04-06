@@ -30,7 +30,7 @@ layout: default
         featured_post.content | number_of_words }} words - {{
         featured_post.content | number_of_words | divided_by: 200 }} min read
       </p>
-      <h2>{{ featured_post.title }}</h2>
+      <h1>{{ featured_post.title }}</h1>
       <p>{{ featured_post.excerpt }}</p>
     </a>
     {% endif %}
@@ -49,7 +49,7 @@ layout: default
         />
         {% endif %}
         <div class="sidebar-post-info">
-          <h3>{{ post.title }}</h3>
+          <h2>{{ post.title }}</h2>
           <p class="post-meta">
             {{ post.date | date: "%B %d, %Y" }} - {{
             post.content | number_of_words }} words - {{

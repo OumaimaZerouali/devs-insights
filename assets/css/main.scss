@@ -184,6 +184,18 @@ hr {
   margin: 50px;
 }
 
+.featured-post a {
+  width: 60%;
+  margin: 50px;
+
+  h1 {
+    display: block;
+    font-size: 1.5em;
+    margin: 0.83em 0;
+    color: #151414;
+  }
+}
+
 .featured-post h2 {
   color: #151414;
 }
@@ -218,6 +230,12 @@ hr {
 
 .sidebar-post-info {
   color: rgb(21, 20, 20);
+}
+
+.sidebar-post-info h2 {
+  display: block;
+  font-size: 1.17em;
+  margin: 1em 0;
 }
 
 .sidebar-post a {
