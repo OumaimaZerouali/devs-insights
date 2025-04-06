@@ -4,6 +4,9 @@ description: >
   A blog about tech and software development.
 baseurl: "/devs-insights"
 url: "https://oumaimazerouali.github.io"
+metadata:
+  author: Oumaima Zerouali
+  keywords: Oumaima,Blog,Java,JavaScript,TypeScript,Angular,DevOps,Cloud,devsinights
 
 theme: minima
 plugins:
