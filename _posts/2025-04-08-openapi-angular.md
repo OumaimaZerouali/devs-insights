@@ -89,7 +89,7 @@ More consistency.
 ### Testing Adjustments
 
 Tests needed some love too. 
-I replaced a bunch of old `MockProvider`s with simpler mocks using the generated interfaces.
+I replaced a bunch of old `MockProvider` with simpler mocks using the generated interfaces.
 
 Example:
 
