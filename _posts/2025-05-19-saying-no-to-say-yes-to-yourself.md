@@ -4,6 +4,7 @@ title:  "Saying No to Say Yes to Yourself"
 date:   2025-05-19 15:30:00 +0100
 image:  "/assets/img/say-no.png"
 ---
+> "I can’t do this... but I’m doing it anyway." — SpongeBob SquarePants
 
 Today, I made a decision I didn’t expect to make:
 I stepped down from being co-lead of a community I *loved* at work.
