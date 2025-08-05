@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Exceptions: The Emergency Brake, Not the Steering Wheel"
-date:   2025-08-05 10:00:00 +0100
+date:   2025-08-05 08:00:00 +0100
 image:  "/assets/img/exceptions.png"
 ---
 > "You don't need a license to drive a sandwich." — SpongeBob SquarePants
